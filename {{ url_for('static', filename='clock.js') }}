@@ -1,0 +1,15 @@
+// script.js
+function updateClock() {
+    fetch('/get_time')
+        .then(response => response.json())
+        .then(data => {
+            // Update HTML elements with current time, date, and day
+            document.getElementById('time').textContent = data.time;
+            document.getElementById('date').textContent = data.date;
+            document.getElementById('day').textContent = data.day;
+        });
+}
+
+// Update every second
+setInterval(updateClock, 1000);
+updateClock();

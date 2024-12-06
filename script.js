@@ -92,3 +92,8 @@ window.addEventListener('load', () => {
         document.getElementById('portfolio').style.display = 'block'; // Show the portfolio content
     }, 5000); // 5 seconds delay
 });
+
+
+
+
+
